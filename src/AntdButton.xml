@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.antdbutton.AntdButton" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Antd Button</name>
+    <description>A button means an operation (or a series of operations). This widget provide a Ant Design Button in Mendix. Clicking a Button will trigger some logic in Mendix.</description>
+    <studioProCategory>Ant Design Widgets</studioProCategory>
+    <icon>
+        iVBORw0KGgoAAAANSUhEUgAAAFAAAABvCAMAAABM47fnAAAA9lBMVEUAAAAAAAD/AFX/QEArgP8kbf8AAAD/KyvrJycAAAAAAAATe//2JC72Iyz3Iiv3ISkAAAAAAAAiIiInJyd4eHh2dnb2IC72Iyv3Ii/3IS71Iy31Iy31IiwVdv8Vd/8Vdv/e3t7f39/f39/0Ii31Ii31Iiz0Ii30Iiz0IS71Iyz1Ii0Wdv8Wd//6+voWd//5+fn6+voWd//6+vr6+voWd//9/f0Wd//9/f31IS31Ii31Ii31Ii31Ii31Iy31Ii31Ii0Wd/////8Wd/////8Wd//////1Ii0Wd/8rKyswhv9Jlf+Et/+VlZXOzs7m5ubx9//1Ii3///8SpQDrAAAAR3RSTlMAAQMEBgcJDA0WGRscHR4fIiYmJzM0ODs8PWZnaGxtbnV2d3iUlqanqLi5xsfHyMjIycnKz8/Q0N3e3+Pk5ebw8fHz8/T0/Brq81UAAAABYktHRFGUaXwqAAABjklEQVRo3u3W21LiQBSF4Z9DIgnIJGQYEQHxEAYZxyOoIKgDSjwPef+X8RWo6kWVVPW62JdfJemurA04uyePiXkeT1oOAMWrRJV+EXB0XpL0HdhNlGnCuRQ8hqkUnEKizVqCr/9NhgUtaEELLgu+vJmMFfwPtZ3ysILWa6l72ekrN4c8UNSJ/SIA+eax4mSmf5p5bGy+T1w/CAUJfBeAjBftXzylxnm62Iu8DOD9vE5FGVQ9cCOZl6aDyMXfT4Vp+wSXSvAsIJwpwVlImEqzluDHs8mwoAUtaMFlwc93kxGKK+BfKC6p0wB/T1yjbjQQFn3FBa8qEwdVD8h4lfaZ4GRmf9sVL7OKdc7G5ntkuzuZL4wzn3RrAOTiYX0za/5Y2VJ9GOeA+GhD9aqFXgzbNxu6j1cY1ujWlcex02FSUoLlMfOsEszOWWiv4GIdwV/3JsOCFrSgBZcFSwcmY6GvgLtNJfhjLK7RRofasCAs+tEWxD2ZWOgdArl4tFNWLEvlxugwB0Dt91ixzt12toAv/VQCWNQ3kuQAAAAASUVORK5CYII=
+    </icon>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Main">
+                <property key="caption" type="string" required="false">
+                    <caption>Caption</caption>
+                    <description />
+                </property>
+                <property key="buttonType" type="enumeration" defaultValue="default">
+                    <caption>Button Type</caption>
+                    <description />
+                    <enumerationValues>
+                        <enumerationValue key="primary">Primary</enumerationValue>
+                        <enumerationValue key="default">Default</enumerationValue>
+                        <enumerationValue key="dashed">Dashed</enumerationValue>
+                        <enumerationValue key="link">Link</enumerationValue>
+                        <enumerationValue key="text">Text</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <property key="buttonShape" type="enumeration" defaultValue="default">
+                    <caption>Button Shape</caption>
+                    <description />
+                    <enumerationValues>
+                        <enumerationValue key="default">Default</enumerationValue>
+                        <enumerationValue key="circle">Circle</enumerationValue>
+                        <enumerationValue key="round">Round</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <property key="buttonSize" type="enumeration" defaultValue="middle">
+                    <caption>Button Size</caption>
+                    <description />
+                    <enumerationValues>
+                        <enumerationValue key="large">Large</enumerationValue>
+                        <enumerationValue key="middle">Middle</enumerationValue>
+                        <enumerationValue key="small">Small</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <property key="buttonBlock" type="boolean" defaultValue="false">
+                    <caption>Button Block</caption>
+                    <description>Fit the button width as its parent.</description>
+                </property>
+                <!--
+                <property key="buttonIcon" type="widgets" required="false">
+                    <caption>Icon</caption>
+                    <description>Need the Antd Icon to support this feature.</description>
+                </property>
+                -->
+            </propertyGroup>
+            <propertyGroup caption="States">
+                <property key="buttonDisabled" type="boolean" defaultValue="false">
+                    <caption>Button Disabled</caption>
+                    <description>Set the button as Disabled state.</description>
+                </property>
+                <property key="buttonDanger" type="boolean" defaultValue="false">
+                    <caption>Danger Button</caption>
+                    <description>Highlight the button as Danger status.</description>
+                </property>
+                <property key="buttonGhost" type="boolean" defaultValue="false">
+                    <caption>Ghost Button</caption>
+                    <description>Make background transparent which commonly used in colored background.</description>
+                </property>
+                <!--
+                <property key="buttonLoading" type="attribute">
+                    <caption>Loading Status</caption>
+                    <description>Set the loading status of the button.</description>
+                    <attributeTypes>
+                        <attributeType name="Boolean" />
+                    </attributeTypes>
+                </property>
+                -->
+            </propertyGroup>
+
+            <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility" />
+            </propertyGroup>
+
+            <propertyGroup caption="Event">
+                <property key="onClickEvent" type="action" required="false">
+                    <caption>On click</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+
+            <propertyGroup caption="Common">
+                <systemProperty key="Name" />
+                <systemProperty key="TabIndex" />
+            </propertyGroup>
+        </propertyGroup>
+
+    </properties>
+</widget>
