@@ -30,6 +30,9 @@ A button means an operation (or a series of operations). This widget provide a A
 
 1. 选择任意页面，向页面添加一个 `Antd Button`。
 2. 为该组件设置必要的属性。包括： `Caption`, `Type`, `Shape`, `Size`, `Block` , `OnClick Event` 等。
+   <img width="432" alt="button-helper-01" src="https://user-images.githubusercontent.com/24690236/205483634-94b15cf8-0f51-4f36-b17a-f24e7111bc41.png">
+   
+   <img width="436" alt="button-helper-02" src="https://user-images.githubusercontent.com/24690236/205483661-6bfe514c-2462-45e4-a5be-79ca46f1053c.png">
 3. 运行。
    
 ## Demo 项目
