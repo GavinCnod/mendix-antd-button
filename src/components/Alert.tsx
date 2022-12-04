@@ -9,8 +9,10 @@ export interface AlertProps {
 
 export class Alert extends Component<AlertProps> {
     render(): ReactNode {
-        return this.props.message
-            ? (<div className={classNames(`alert alert-${this.props.bootstrapStyle}`, this.props.className)}>{this.props.message}</div>)
-            : null;
+        return this.props.message ? (
+            <div className={classNames(`alert alert-${this.props.bootstrapStyle}`, this.props.className)}>
+                {this.props.message}
+            </div>
+        ) : null;
     }
 }

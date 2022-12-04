@@ -1,6 +1,6 @@
 import { Component, ReactNode, createElement } from "react";
 
-//import { parseInlineStyle } from "@mendix/pluggable-widgets-tools";
+// import { parseInlineStyle } from "@mendix/pluggable-widgets-tools";
 
 import { Button } from "antd";
 import { AntdButtonPreviewProps } from "../typings/AntdButtonProps";
@@ -10,14 +10,15 @@ export class preview extends Component<AntdButtonPreviewProps> {
         return (
             <div ref={this.parentInline}>
                 <Button
-                type={this.props.buttonType}
-                shape={this.props.buttonShape}
-                size={this.props.buttonSize}
-                danger={this.props.buttonDanger}
-                disabled={this.props.buttonDisabled}
-                block={this.props.buttonBlock}
-                ghost={this.props.buttonGhost}>
-                 {this.props.caption}
+                    type={this.props.buttonType}
+                    shape={this.props.buttonShape}
+                    size={this.props.buttonSize}
+                    danger={this.props.buttonDanger}
+                    disabled={this.props.buttonDisabled}
+                    block={this.props.buttonBlock}
+                    ghost={this.props.buttonGhost}
+                >
+                    {this.props.caption}
                 </Button>
             </div>
         );
@@ -29,7 +30,6 @@ export class preview extends Component<AntdButtonPreviewProps> {
             node.parentElement.parentElement.style.display = "inline-block";
         }
     }
-
 }
 
 export function getPreviewCss(): string {
