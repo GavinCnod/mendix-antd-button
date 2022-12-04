@@ -6,9 +6,7 @@
     <name>Antd Button</name>
     <description>A button means an operation (or a series of operations). This widget provide a Ant Design Button in Mendix. Clicking a Button will trigger some logic in Mendix.</description>
     <studioProCategory>Ant Design Widgets</studioProCategory>
-    <icon>
-        iVBORw0KGgoAAAANSUhEUgAAAFAAAABvCAMAAABM47fnAAAA9lBMVEUAAAAAAAD/AFX/QEArgP8kbf8AAAD/KyvrJycAAAAAAAATe//2JC72Iyz3Iiv3ISkAAAAAAAAiIiInJyd4eHh2dnb2IC72Iyv3Ii/3IS71Iy31Iy31IiwVdv8Vd/8Vdv/e3t7f39/f39/0Ii31Ii31Iiz0Ii30Iiz0IS71Iyz1Ii0Wdv8Wd//6+voWd//5+fn6+voWd//6+vr6+voWd//9/f0Wd//9/f31IS31Ii31Ii31Ii31Ii31Iy31Ii31Ii0Wd/////8Wd/////8Wd//////1Ii0Wd/8rKyswhv9Jlf+Et/+VlZXOzs7m5ubx9//1Ii3///8SpQDrAAAAR3RSTlMAAQMEBgcJDA0WGRscHR4fIiYmJzM0ODs8PWZnaGxtbnV2d3iUlqanqLi5xsfHyMjIycnKz8/Q0N3e3+Pk5ebw8fHz8/T0/Brq81UAAAABYktHRFGUaXwqAAABjklEQVRo3u3W21LiQBSF4Z9DIgnIJGQYEQHxEAYZxyOoIKgDSjwPef+X8RWo6kWVVPW62JdfJemurA04uyePiXkeT1oOAMWrRJV+EXB0XpL0HdhNlGnCuRQ8hqkUnEKizVqCr/9NhgUtaEELLgu+vJmMFfwPtZ3ysILWa6l72ekrN4c8UNSJ/SIA+eax4mSmf5p5bGy+T1w/CAUJfBeAjBftXzylxnm62Iu8DOD9vE5FGVQ9cCOZl6aDyMXfT4Vp+wSXSvAsIJwpwVlImEqzluDHs8mwoAUtaMFlwc93kxGKK+BfKC6p0wB/T1yjbjQQFn3FBa8qEwdVD8h4lfaZ4GRmf9sVL7OKdc7G5ntkuzuZL4wzn3RrAOTiYX0za/5Y2VJ9GOeA+GhD9aqFXgzbNxu6j1cY1ujWlcex02FSUoLlMfOsEszOWWiv4GIdwV/3JsOCFrSgBZcFSwcmY6GvgLtNJfhjLK7RRofasCAs+tEWxD2ZWOgdArl4tFNWLEvlxugwB0Dt91ixzt12toAv/VQCWNQ3kuQAAAAASUVORK5CYII=
-    </icon>
+    <icon />
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="Main">

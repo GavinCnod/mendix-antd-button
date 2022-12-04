@@ -1,7 +1,7 @@
 {
   "name": "antdbutton",
   "widgetName": "AntdButton",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A button means an operation (or a series of operations). This widget provide a Ant Design Button in Mendix. Clicking a Button will trigger some logic in Mendix.",
   "copyright": "© Mendix Technology BV 2022. All rights reserved.",
   "author": "Gavin Chen",
