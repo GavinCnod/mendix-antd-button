@@ -1,3 +1,5 @@
+![GitHub all releases](https://img.shields.io/github/downloads/GavinCnod/mendix-antd-button/total?style=social)
+
 ## 介绍
 基于 Ant Design Button 组件封装的 Mendix Pluggable Widget，标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。
 A button means an operation (or a series of operations). This widget provide a Ant Design Button in Mendix. Clicking a Button will trigger some logic in Mendix.
