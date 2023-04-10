@@ -1,82 +1,80 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/GavinCnod/mendix-antd-button/total?style=social)
 
-## 介绍
-基于 Ant Design Button 组件封装的 Mendix Pluggable Widget，标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。
-A button means an operation (or a series of operations). This widget provide a Ant Design Button in Mendix. Clicking a Button will trigger some logic in Mendix.
+Readme here: [Readme in English](https://github.com/GavinCnod/mendix-antd-button/blob/main/README.md) | [Readme in Chinese (中文）](https://github.com/GavinCnod/mendix-antd-button/blob/main/README_CN.md)
 
-## 功能特性
-1. 在 Ant Design 中我们提供了五种按钮。
-    * 主按钮（Primary）：用于主行动点，一个操作区域只能有一个主按钮。
-    * 默认按钮（Default）：用于没有主次之分的一组行动点。
-    * 虚线按钮（Dashed）：常用于添加操作。
-    * 文本按钮（Text）：用于最次级的行动点。
-    * 链接按钮（Link）：一般用于链接，即导航至某位置。
+## Introduction
+This widget provide a Ant Design Button in Mendix. Clicking a Button will trigger some actions/logics in Mendix.
 
-2. 以及三种状态属性与上面配合使用。
-    * 危险（Danger）：删除/移动/修改权限等危险操作，一般需要二次确认。
-    * 幽灵（Ghost）：用于背景色比较复杂的地方，常用在首页/产品页等展示场景。
-    * 禁用（Disabled)：行动点不可用的时候，一般需要文案解释。
+## Features
+1. 5 type of button provided:
+   * Primary button: indicate the main action, one primary button at most in one section.
+   * Default button: indicate a series of actions without priority.
+   * Dashed button: used for adding action commonly.
+   * Text button: used for the most secondary action.
+   * Link button: used for external links.
 
-3. 提供大中小三种尺寸级别。
-4. 提供默认（Default）、圆形（Circle）和圆角（Round）三种形状选项。
-5. 提供 Block 设置用于实现父容器全宽按钮。
+2. And 3 other properties additionally.
+   * danger: used for actions of risk, like deletion or authorization.
+   * ghost: used in situations with complex background, home pages usually.
+   * disabled: when actions are not available.
 
-## 快速安装和使用
+3. If a large or small button is desired, set the size property to either large or small respectively. Omit the size property for a button with the default size.
+4. 3 shapes options: Default, Circle, Round.
+5. block property will make the button fit to its parent width.
 
-### 将该组件添加到 Mendix Project 中
-1. 从右边 Releases 处下载 mpk 文件。
-2. 把 mpk 文件复制到您的 Project 目录下 `{YourMendixProjectFolder}/widgets/`
-3. 用 Mendix Studio Pro 打开你的 Mendix Project，然后点击菜单 `Menu > App > Synchronize App Directory`.
+## Installation and Usage
 
-### 快速配置组件
+### Add this widget to the Mendix Project
+1. Download the mpk file from [here](https://github.com/GavinCnod/mendix-antd-button/releases).
+2. Copy the mpk file to your Mendix Project directory `{YourMendixProjectFolder}/widgets/`.
+3. Open your Mendix Project with Mendix Studio Pro and click on the menu `Menu > App > Synchronize App Directory`.
 
-1. 选择任意页面，向页面添加一个 `Antd Button`。
-2. 为该组件设置必要的属性。包括： `Caption`, `Type`, `Shape`, `Size`, `Block` , `OnClick Event` 等。
+### Configuration
+
+1. Add widget `Antd Button` to a Page.
+2. Config the parameters, including:  `Caption`, `Type`, `Shape`, `Size`, `Block` , `OnClick Event` and etc.
    <img width="432" alt="button-helper-01" src="https://user-images.githubusercontent.com/24690236/205483634-94b15cf8-0f51-4f36-b17a-f24e7111bc41.png">
    
    <img width="436" alt="button-helper-02" src="https://user-images.githubusercontent.com/24690236/205483661-6bfe514c-2462-45e4-a5be-79ca46f1053c.png">
-3. 运行。
+3. Run the project locally and check.
    
-## Demo 项目
+## Demo Project
 
-1. 你可以在[这里](todo)访问在线 demo。  
-2. 也可以下载 demo project，在自己的 Mendix Studio Pro 上启动运行。具体方法如下：
-    1. clone demo project。
-    2. 运行。
+1. You can access the online demo from [here](https://demo-antdwidgets100.apps.ap-2a.mendixcloud.com/) to show the features of this widget.
+2. You can also download the demo project to run it on your own PC.
 
-## 详细配置说明
+## Datail of properties
 ### Main Section
-* Caption：按钮文本。
-* Button Type：设置按钮类型。
-* Button Shape：设置按钮形状。
-* Button Size：设置按钮大小
-* Button Block：设置是否为全宽按钮。
+* Caption：button text.
+* Button Type：button type.
+* Button Shape：button shape.
+* Button Size：button size.
+* Button Block：full width as parent or not.
 ### Status Section
-* Disabled：是否禁用按钮事件，默认为`No`.
-* Danger：是否为危险按钮，默认为`No`.
-* Ghost：是否为幽灵按钮，默认为`No`.
+* Disabled：status default as `No`.
+* Danger：status default as `No`.
+* Ghost：status default as `No`.
 ### Event Section
-* OnClick Event：点击按钮事件。
+* OnClick Event：button event.
 
-## 与 `antd` Button 的功能对比
+## Comparing the `antd` `Button` 
 
-这里列举了 `antd` 中 `Button` 的所有参数，并说明了该组件是否支持该属性，以及不支持的原因。如果想查看`antd`中原属性的含义，请[移步这里](https://ant.design/components/button)。
+Here is a list of all the properties of `Button` in `antd`, with a description of whether this widget supports the property and why it does not. To see the meaning of the original property in antd, please [move here](https://ant.design/components/button).
 
-| antd 组件参数             | 参数说明                                       | 是否支持 | 备注                   |
+| antd properties             | Description                                       | Supproted | Comments                   |
 | --------------------- | ------------------------------------------ | ---- | -------------------- |
-| block            | 将按钮宽度调整为其父宽度的选项                    | Y    |                      |
-| danger              | 设置危险按钮                                  | Y    |                     |
-| disabled            | 按钮失效状态                    | Y    |                      |
-| ghost              | 幽灵属性，使按钮背景透明                                  | Y    |                     |
-| href            | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致                    | N    | Mendix 中无需使用该参数           |
-| ghost              | 幽灵属性，使按钮背景透明                                  | Y    |                     |
-| icon                  | 设置按钮的图标组件                    | N    | 存在 CSS 覆盖问题待补全     |
-| loading                | 设置按钮载入状态                                | N    | 需求较小，后续实现                     |
-| shape                | 设置按钮形状                                | Y    |                      |
-| size            | 设置按钮大小                            | Y    |                      |
-| target                 | 相当于 a 链接的 target 属性，href 存在时生效            | N    | Mendix 中无需使用该参数                     |
-| type              | 设置按钮类型                              | Y    |                      |
-| onClick             | 点击按钮的回调                              | Y    |                      |
+| block            | fit width as the parent                    | Y    |                      |
+| danger              | danger status                                  | Y    |                     |
+| disabled            | disabled status                    | Y    |                      |
+| ghost              | make background transparent and invert text and border colors                                 | Y    |                     |
+| href            | Redirect url of link button                   | N    | No need in Mendix           |
+| icon                  | Set the icon component of button                    | N    | WIP     |
+| loading                | Loading status                                | N    | WIP                     |
+| shape                | Button shape                                | Y    |                      |
+| size            | Button size                            | Y    |                      |
+| target                 | Same as target attribute of a, works when href is specified            | N    | No need in Mendix                     |
+| type              | Button Type                              | Y    |                      |
+| onClick             | OnClick event                              | Y    |                      |
 
 ## Issues, suggestions and feature requests
 [link to GitHub issues]
